@@ -1,0 +1,38 @@
+
+<h3>This is home Page</h3>
+
+<input type="text" ng-model="home.data.view" placeholder="Enter any value that will be printed in  2nd page">
+       <!--<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' placeholder='Phone Number (Format: +99(99)9999-9999)'> -->
+<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="phonenumber" ng-model="phonenumber" maxlength="10" format-phone>
+
+<button ng-click="home.submit(home.data.view)">Submit</button>
+<label>
+  Order by:
+  <select ng-model="orderProp" ng-options="prop for prop in ['age', 'city']"></select>
+  <input type="text" ng-model="home.search">
+</label>
+   <table>
+       <tr>
+       <th>
+           Name
+       </th>
+       <th>
+           Age
+       </th>
+       <th>
+           City
+
+       </th>
+       </tr>
+       <tr ng-repeat="arr in home.arr | toArray:true | orderBy: orderProp | filter: home.search">
+       
+       <td>{{arr.name}}</td>
+       <td>{{arr.age}}</td>
+       <td>{{arr.city}}</td>
+       </tr>
+       </table>
+       
+
+<button ui-sref="secondPage({x:5})" class="ng-scope fade"> go to second page</button>
+<button ui-sref="thirdPage">go to thrid page</button>
+

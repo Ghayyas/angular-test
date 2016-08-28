@@ -1,0 +1,29 @@
+{
+  "name": "angular-test",
+  "authors": [
+    "Ghayyas Mubashir <ghayyasmubashir@gmail.com>"
+  ],
+  "description": "Simple app for angular test",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "test"
+  ],
+  "license": "MIT",
+  "homepage": "index",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-animate": "^1.5.8",
+    "angular-toArrayFilter": "^1.0.1",
+    "jquery": "^3.1.0"
+  }
+}
