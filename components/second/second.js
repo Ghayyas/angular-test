@@ -15,5 +15,20 @@
          var getData =  passingData.getData();
          console.log('list get',getData);
          _self.getData = getData;
+         _self.firstValue = _self.firstValue;
+         _self.secondValue = _self.secondValue;
+         _self.thirdValue = _self.thirdValue;
+         _self.run = function(){
+          console.log('value',_self.firstValue)
+         console.log('value',_self.second)
+        _self.sumValue = _self.firstValue + _self.secondValue + _self.thirdValue;
+        console.log('value',_self.sumValue);
+        //  _self.remain = function(){
+        //      _self.remainValue = _self.sumValue /3;
+        //      console.log('remain',_self.remainValue);
+        //  }
+         }
+
+         
     }
 })();

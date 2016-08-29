@@ -3,8 +3,9 @@
 
 <input type="text" ng-model="home.data.view" placeholder="Enter any value that will be printed in  2nd page">
        <!--<input type='tel' pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' placeholder='Phone Number (Format: +99(99)9999-9999)'> -->
-<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="phonenumber" ng-model="phonenumber" maxlength="10" format-phone>
-
+<!--<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="phonenumber" ng-model="phonenumber" maxlength="10" format-phone>-->
+<number-only-input></number-only-input>
+<currency-converter></currency-converter>
 <button ng-click="home.submit(home.data.view)">Submit</button>
 <label>
   Order by:
